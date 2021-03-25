@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LIST OF ALL STUDENTS</title>
+</head>
+<body>
+
+<table border="1">
+    <thead>
+        <td>NAME</td>
+        <td>branch</td>
+        <td>College</td>
+        <td>Batch</td>
+        <td>Program</td>
+        <td>course</td>
+        <td>firstlang</td>
+    </thead>
+    
+        {% for row in rows %}
+
+        <tr>
+           <td>{{row['name']}}</td>
+           <td>{{row['branch']}}</td>
+           <td>{{row['college']}}</td>
+           <td>{{row['batch']}}</td>
+           <td>{{row['program']}}</td>
+           <td>{{row['course']}}</td>
+           <td>{{row['firstLang']}}</td>
+
+        </tr>
+        {% endfor %}
+</table>
+<a href="/"> go home</a>
+
+</body>
+</html>

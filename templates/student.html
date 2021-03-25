@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>add new student</title>
+</head>
+<body>
+
+<form action="{{url_for('addrec')}}" method="POST">
+    <h3>student info</h3>
+    name<br><input type="text" name="name">
+    <br>branch
+    <textarea type="text" name="branch" ></textarea>
+    <br>college
+    <textarea type="text" name="college" ></textarea>
+    <br>batch
+    <textarea type="text" name="batch" ></textarea>
+    <br>program
+    <textarea type="text" name="program" ></textarea>
+    <br>course
+    <textarea type="text" name="course" ></textarea> 
+    <br>firstlang
+    <textarea type="text" name="firstLang" ></textarea>   
+    <input type="submit" value="submit">
+
+</form>
+
+</body>
+</html>
